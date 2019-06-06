@@ -1,4 +1,4 @@
 input_fasta:
   class: File
-  path: /Users/kates/Desktop/antismash/11861_6_58.fa
+  path: ../Files/11861_6_58.fa
 output_dir: /Users/kates/Desktop/antismash/out/
