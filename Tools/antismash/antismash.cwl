@@ -16,7 +16,7 @@ inputs:
 
 
 arguments:
-  - valueFrom: ../$(inputs.input_fasta.path)
+  - valueFrom: ..$(inputs.input_fasta.path)
     position: 1
   - valueFrom: prodigal
     prefix: --genefinding-tool
@@ -24,6 +24,9 @@ arguments:
     position: 3
   - valueFrom: --cb-knownclusters
     position: 4
+  - valueFrom: $(runtime.outdir)/output
+    prefix: --output-dir
+    position: 5
 
 
 stdout: stdout.txt
@@ -36,5 +39,5 @@ outputs:
   output_antismash:
     type: Directory
     outputBinding:
-      glob: '/output'
+      glob: 'output'  #$(runtime.outdir)  #'/output'
 
