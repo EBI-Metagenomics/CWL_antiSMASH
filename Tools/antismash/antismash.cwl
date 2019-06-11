@@ -36,8 +36,8 @@ outputs:
   stdout: stdout
   stderr: stderr
 
-  output_antismash:
+  css_folder:
     type: Directory
     outputBinding:
-      glob: 'output'  #$(runtime.outdir)  #'/output'
+      glob: 'output/css'  #$(runtime.outdir)  #'/output'
 

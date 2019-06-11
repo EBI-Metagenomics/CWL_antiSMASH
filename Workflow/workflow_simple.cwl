@@ -14,7 +14,7 @@ inputs:
 
 outputs:
   output_antismash:
-    outputSource: antismash/output_antismash
+    outputSource: antismash/css_folder
     type: Directory
 
 steps:
@@ -22,5 +22,5 @@ steps:
     in:
       input_fasta: input_fasta_file
     out:
-      - output_antismash
+      - css_folder
     run: ../Tools/antismash/antismash.cwl
