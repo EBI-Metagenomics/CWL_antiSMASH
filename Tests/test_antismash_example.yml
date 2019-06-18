@@ -1,7 +1,7 @@
 # cwltest --basedir cwl_test_dir --test ../Tools/antismash/antismash.cwl --tool cwltool
 
-- job: /Users/kates/Desktop/antismash/CWL_antiSMASH/Tools/antismash/antismash.yml
-  tool: /Users/kates/Desktop/antismash/CWL_antiSMASH/Tools/antismash/antismash.cwl
+- job: Tools/antismash/antismash.yml
+  tool: Tools/antismash/antismash.cwl
   output:
     output_css:
       basename: css
