@@ -1,0 +1,470 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>example - 1 region(s) - antiSMASH results</title>
+  <link rel="stylesheet" type="text/css" href="css/bacteria.css">
+  <meta property="og:title" content="example - 1 record(s) - 1 region(s)" />
+  <meta property="og:description" content="">
+  <meta property="og:image" content="https://antismash.secondarymetabolites.org/images/bacteria_logo.png" />
+  <meta property="og:image:alt" content="antiSMASH logo" />
+  <meta property="og:image:width" content="600" />
+  <meta property="og:image:height" content="600" />
+  <meta property="og:url" content="https://antismash.secondarymetabolites.org/upload/output/index.html" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@antismash_dev" />
+</head>
+
+<body>
+  <div id="header">
+      <nav>
+    <div class="main-link">
+     <div>
+        <a href="https://antismash.secondarymetabolites.org/">
+          <img src="images/bacteria_antismash_logo.svg" alt="antiSMASH logo" width="40px">
+        </a>
+       </div>
+       <div>
+        <a href="https://antismash.secondarymetabolites.org/">
+          antiSMASH version 5.0.0
+        </a>
+      </div>
+    </div>
+    <div class="custom-description"></div>
+    <div class="ancillary-links">
+      <div class="ancillary-link dropdown-menu" id="download-dropdown"><a href="#" id="download-dropdown-link"><img src="images/download.svg" alt="download"> &nbsp; Download</a>
+        <ul class="dropdown-options">
+        
+        <li><a href="example.zip">Download all results</a></li>
+        
+          <li><a href="example.gbk">Download GenBank summary file</a></li>
+        
+        </ul>
+      </div>
+      <div class="ancillary-link"><a href="https://antismash.secondarymetabolites.org/#!/about"><img src="images/about.svg" alt="about"> &nbsp; About</a></div>
+      <div class="ancillary-link"><a href="https://docs.antismash.secondarymetabolites.org/"><img src="images/help.svg" alt="help"> &nbsp; Help</a></div>
+      <div class="ancillary-link"><a href="https://antismash.secondarymetabolites.org/#!/contact"><img src="images/contact.svg" alt="contact"> &nbsp; Contact</a></div>
+    </div>
+  </nav>
+    <div id="buttons">
+      <span id="region-type">Select genomic region:</span>
+      <div id="regionbuttons">
+        <div class="arrow-left" id="prev-region"></div>
+        <div class="regbutton" style="min-width: inherit;"><a href="#">Overview</a></div>
+        <div style="display: flex; flex-wrap: wrap">
+        
+          
+            
+            
+            <div class="regbutton NRPS r2c1">
+              <a href="#r2c1">2.1</a>
+            </div>
+          
+        
+        </div>
+        <div id="last-regbutton"><div class="arrow-right" id="next-region"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- overview page -->
+  
+  <div class="page" id="overview">
+   
+     <h3>Identified secondary metabolite regions<span id="truncated"></span></h3>
+   
+   <div class="overview-layout">
+    <div id="record-tables">
+     <div id="single-record-tables">
+     <div class="record-overview-header">
+       <strong>.11861_6_58.2</strong>
+      </div>
+      <div class="record-overview-details">
+        <svg id="record-minimap-2" class="record-overview-svg" height="1" width="1"></svg>
+        <table class="region-table">
+ <thead>
+  <tr>
+   <th>Region</th>
+   <th>Type</th>
+   <th>From</th>
+   <th>To</th>
+   <th colspan="2">Most similar known cluster</th>
+   <th>Similarity</th>
+  </tr>
+ </thead>
+ <tbody>
+ <tr class="linked-row odd" data-anchor="#r2c1">
+     
+     
+     <td class="regbutton NRPS r2c1">
+      <a href="#r2c1">Region&nbsp2.1</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://docs.antismash.secondarymetabolites.org/glossary/#nrps" target="_blank">NRPS</a>
+     </td>
+     <td class="digits">167,903</td>
+     <td class="digits table-split-left">211,261</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+ 
+ </tbody>
+</table>
+      </div>
+     </div>
+     
+     <div id="compact-record-table" style="display: none;">
+      <div class="record-table">
+       <table class="region-table">
+ <thead>
+  <tr>
+   <th>Region</th>
+   <th>Type</th>
+   <th>From</th>
+   <th>To</th>
+   <th colspan="2">Most similar known cluster</th>
+   <th>Similarity</th>
+  </tr>
+ </thead>
+ <tbody>
+ 
+ 
+  <tr class="linked-row odd" data-anchor="#r2c1">
+     
+     
+     <td class="regbutton NRPS r2c1">
+      <a href="#r2c1">Region&nbsp2.1</a>
+     </td>
+     <td>
+       
+       <a class="external-link" href="https://docs.antismash.secondarymetabolites.org/glossary/#nrps" target="_blank">NRPS</a>
+     </td>
+     <td class="digits">167,903</td>
+     <td class="digits table-split-left">211,261</td>
+     
+      <td colspan="3"></td>
+     
+   </tr>
+  
+ 
+ </tbody>
+</table>
+      </div>
+     </div>
+     
+     
+     <dl id="regionless-records">
+      <dt class="record-overview-header">No secondary metabolite regions were found in these records:</dt>
+       
+         <dd><strong>.11861_6_58.1</strong></dd>
+       
+     </dl>
+     
+    </div>
+    
+    <div class="overview-switches">
+     <div class="overview-switch-compact switch-container"><span class="switch-desc">Compact view</span> <label class="switch">  <input class="overview-switch-compact" type="checkbox">  <span class="slider"></span> </label></div>
+    </div>
+    
+   </div>
+  </div>
+  
+
+
+
+
+
+
+<div class="page" id='r2c1'>
+ <div class="region-grid">
+  <div class = "content">
+    <div class ="description-container">
+      <div class="heading"> .11861_6_58.2 - Region 1 - NRPS <div class="help-container"> <div class="help-icon" data-id="region_svg-help-5"></div> <span class="help-tooltip" id="region_svg-help-5">Shows the layout of the region, marking coding sequences and areas of interest. Clicking a gene will select it and show any relevant details. Clicking an area feature (e.g. a candidate cluster) will select all coding sequences within that area. Double clicking an area feature will zoom to that area. Multiple genes and area features can be selected by clicking them while holding the Ctrl key.<br>More detailed help is available <a class='external-link' href='https://docs.antismash.secondarymetabolites.org/understanding_output/#the-antismash-5-region-concept' target='_blank'>here</a>.</span></div></div>
+      <div class="region-download">
+        <a href = .11861_6_58.2.region001.gbk>Download region GenBank file</a>
+      </div>
+      <div class = 'description-text'>
+        Location: 167,903 - 211,261 nt. (total: 43,359 nt)
+        <a class="cluster-rules-header" id="r2c1-rules-header" href="#r2c1">Show pHMM detection rules used</a>
+        
+      </div>
+      <div class="cluster-rules" id="r2c1-rules">NRPS: (cds(Condensation and (AMP-binding or A-OX)) or (Condensation and AMP-binding))</div>
+      <div class="region-svg-container">
+       <div id='r2c1-svg'>
+       </div>
+      </div>
+    </div>
+    <div class="legend">
+      <h4>Legend:</h4>
+      <div class="legend-items">
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic">
+      <div class="legend-field legend-type-biosynthetic"></div>
+      <div class="legend-label">core biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-biosynthetic-additional">
+      <div class="legend-field legend-type-biosynthetic-additional"></div>
+      <div class="legend-label">additional biosynthetic genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-transport">
+      <div class="legend-field legend-type-transport"></div>
+      <div class="legend-label">transport-related genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-regulatory">
+      <div class="legend-field legend-type-regulatory"></div>
+      <div class="legend-label">regulatory genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-resistance">
+      <div class="legend-field legend-type-resistance"></div>
+      <div class="legend-label">resistance genes</div>
+    </div>
+        <div class="button-like legend-selector" data-id="legend-type-other">
+      <div class="legend-field legend-type-other"></div>
+      <div class="legend-label">other genes</div>
+    </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="zoom-buttons">
+      <div class="button-like zoom-button zoom-reset"><img src="images/expand-arrows-alt-solid.svg" alt="reset zoom">reset view</div>
+      <div class="button-like zoom-button zoom-in"><img src="images/search-solid.svg" alt="zoom">zoom to selection</div>
+    </div>
+  </div>
+
+  <div class="focus-panel">
+    <div class="heading">
+      <span>Gene details</span>
+      <div class="help-container"> <div class="help-icon" data-id="focus-panel-help-6"></div> <span class="help-tooltip" id="focus-panel-help-6">Shows details of the most recently selected gene, including names, products, location, and other annotations.</span></div>
+    </div>
+    <div class="focus-panel-content focus-panel-content-r2c1">
+        <div style="text-align: center; margin-top: 30%;">
+            Select a gene to view the details available for it
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="body-details">
+    <div class="body-details-headers">
+    
+     
+      <div class="body-details-header r2c1-nrps_pks" data-name="r2c1-nrps_pks">
+        NRPS/PKS domains
+      </div>
+     
+    
+     
+    
+     
+      <div class="body-details-header r2c1-knownclusterblast" data-name="r2c1-knownclusterblast">
+        KnownClusterBlast
+      </div>
+     
+    
+    </div>
+    
+     
+    <div class="body-details-section r2c1-nrps_pks">
+      <div class="details">
+  
+    <div class="heading">
+      <span>Detailed domain annotation</span>
+      <div class="help-container"> <div class="help-icon" data-id="nrps-domain-help-1"></div> <span class="help-tooltip" id="nrps-domain-help-1">Shows <a href='https://docs.antismash.secondarymetabolites.org/glossary/#nrps' target='_blank'>NRPS</a>- and <a href='https://docs.antismash.secondarymetabolites.org/glossary/#pks' target='_blank'>PKS</a>-related domains for each feature that contains them. Click on each domain for more information about the domain's location, consensus monomer prediction, and other details.<br>A glossary is available <a href='https://docs.antismash.secondarymetabolites.org/modules/nrps_pks_domains/' target='_blank'>here</a>.</span></div>
+    </div>
+    <div class="nrps-pks-domain-buttons">
+      <div class="domains-selected-only switch-container"><span class="switch-desc">Selected features only</span> <label class="switch">  <input class="domains-selected-only" type="checkbox">  <span class="slider"></span> </label></div>
+    </div>
+    <div class="details-svg" id="r2c1-details-svg"></div>
+  
+</div>
+    </div>
+     
+    
+     
+    
+     
+    <div class="body-details-section r2c1-knownclusterblast">
+      <div class = "knownclusterblast">
+    <div class="heading">
+      <span>Similar known gene clusters</span>
+      <div class="help-container"> <div class="help-icon" data-id="cb-known-help-4"></div> <span class="help-tooltip" id="cb-known-help-4">Shows clusters from the MiBIG database that are similar to the current region. Genes marked with the same colour are interrelated. White genes have no relationship.<br>Click on reference genes to show details of similarities to genes within the current region.<br>Click on an accession to open that entry in the MiBIG database.</span></div>
+    </div>
+  
+  <div>
+    <p>No matches found.</p>
+  </div>
+  
+</div>
+    </div>
+     
+    
+  </div>
+
+  <div class="sidepanel">
+    <div class="sidepanel-details-headers">
+    
+     
+    
+     
+      <div class="sidepanel-details-header r2c1-nrps_pks_products" data-name="r2c1-nrps_pks_products">
+        NRPS/PKS products
+      </div>
+     
+      <div class="sidepanel-details-header r2c1-nrps_pks" data-name="r2c1-nrps_pks">
+        NRPS/PKS monomers
+      </div>
+     
+    
+     
+    
+    </div>
+    
+     
+    
+     
+    <div class="sidepanel-details-section r2c1-nrps_pks_products">
+      <div class="structure">
+  
+    <div class="heading">
+      <span>Predicted core structure(s)</span>
+      <div class="help-container"> <div class="help-icon" data-id="nrps-structures-help-2"></div> <span class="help-tooltip" id="nrps-structures-help-2">Shows estimated product structure and polymer for each candidate cluster in the region. To show the product, click on the expander or the candidate cluster feature drawn in the overview. </span></div>
+    </div>
+    
+      
+        <div>
+          <div class="prediction-text">
+            For candidate cluster 1, location 167902 - 211261:
+          <div class="collapser collapser-target-CC1 collapser-level-candidate"> </div><div class="collapser-content">
+          
+          
+            <div>
+              <dl>
+                <dt><b>Polymer prediction:</b></dt><dd>(X)</dd>
+              </dl>
+              <br>Direct lookup in NORINE database:
+              <a class="external-link" href="http://bioinfo.lifl.fr/norine/fingerPrintSearch.jsp?nrps1=x" target="_new">strict</a>
+                or
+              <a class="external-link" href="http://bioinfo.lifl.fr/norine/fingerPrintSearch.jsp?nrps1=x" target="_new">relaxed</a><br>
+            </div>
+            
+            </div>
+            </div>
+        </div>
+        
+      
+      
+    
+    <div class="prediction-text">
+      <br>
+      <a class="external-link" href="http://bioinfo.lifl.fr/norine/form2.jsp" target="_new">Link to NORINE database query form</a>
+    </div>
+  
+</div>
+    </div>
+     
+    <div class="sidepanel-details-section r2c1-nrps_pks">
+      <div class="more-details">
+    <div class="heading">
+      <span>NRPS/PKS monomer predictions</span>
+      <div class="help-container"> <div class="help-icon" data-id="nrps-monomers-help-3"></div> <span class="help-tooltip" id="nrps-monomers-help-3">Shows the predicted monomers for each adynelation domain and acyltransferase within genes. Each gene prediction can be expanded to view detailed predictions of each domain. Each prediction can be expanded to view the predictions by tool  (and, for some tools, further expanded for extra details). </span></div>
+    </div>
+  <dl class="prediction-text">
+    
+      <strong>ctg2_157</strong>: X
+      <div class="collapser collapser-target-ctg2_157 collapser-level-cds"> </div><div class="collapser-content">
+      <dt></dt>
+      
+        <dd> Search NORINE for peptide:
+          <a class="external-link" href="http://bioinfo.lifl.fr/norine/fingerPrintSearch.jsp?nrps1=X" target="_new">strict</a>
+            or
+          <a class="external-link" href="http://bioinfo.lifl.fr/norine/fingerPrintSearch.jsp?nrps1=X*" target="_new">relaxed</a>
+        </dd>
+        <br>
+      
+      
+        
+          <dd><strong>AMP-binding (7..410)</strong>: X
+          <div class="collapser collapser-target-ctg2_157 collapser-level-candidate"> </div><div class="collapser-content">
+          
+              NRPSPredictor2:  (unknown)
+              <div class="collapser collapser-target-ctg2_157-NRPSPredictor2 collapser-level-none"> </div><div class="collapser-content">
+                
+<dl><dt>SVM prediction details:</dt>
+ <dd>  <strong>NOTE: outside applicability domain</strong><br>
+  <dl>   <dt>Predicted physicochemical class:</dt>
+   <dd>N/A</dd>
+   <dt>Large clusters prediction:</dt>
+   <dd>N/A</dd>
+   <dt>Small clusters prediction:</dt>
+   <dd>N/A</dd>
+   <dt>Single AA prediction:</dt>
+   <dd>N/A</dd>
+  </dl>
+ </dd>
+</dl>
+<dl><dt>Stachelhaus prediction details:</dt>
+ <dd>
+  <dl>
+   <dt>Stachelhaus sequence:</dt>
+   <dd>aFmmFGGpVK</dd>
+   <dt>Nearest Stachelhaus code:</dt>
+   <dd>leu</dd>
+   <dt>Stachelhaus code match:</dt>
+   <dd>60% (weak)</dd>
+  </dl>
+ </dd>
+</dl>
+
+              </div><br>
+          
+          </div>
+          </dd>
+        
+      
+      </div>
+      <br>
+    
+  </dl>
+</div>
+    </div>
+     
+    
+     
+    
+  </div>
+
+ </div>
+
+</div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <img src="images/bacteria_antismash_logo.svg" height="90px">
+      </div>
+      <div class="cite-me">
+        If you have found antiSMASH useful, please <a href="https://antismash.secondarymetabolites.org/#!/about">cite us</a>.
+      </div>
+      <div>
+        <img src="images/bacteria_antismash_icon.svg" height="100px">
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/antismash.js"></script>
+  <script src="regions.js"></script>
+  <script>
+    $(document).ready(function() {
+        viewer["start"](all_regions, details_data, recordData);
+    })
+  </script>
+
+</body>
+</html>

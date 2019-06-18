@@ -1,3 +1,4 @@
 input_fasta_file:
   class: File
-  path: ../Files/11861_6_58.fa
+  path: ../Files/input/example.fa
+  #../Files/11861_6_58.fa

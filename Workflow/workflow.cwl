@@ -7,57 +7,41 @@ requirements:
   InlineJavascriptRequirement: {}
   StepInputExpressionRequirement: {}
   ScatterFeatureRequirement: {}
-  DockerRequirement:
-    dockerPull: antismash/standalone:5.0.0
 
 inputs:
   input_fasta_file:
     type: File
 
 outputs:
-  output_antismash:
-    outputSource: antismash/output_antismash
+  output_antismash_css:
+    outputSource: antismash/output_css
     type: Directory
-
+  output_antismash_images:
+    outputSource: antismash/output_images
+    type: Directory
+  output_antismash_js:
+    outputSource: antismash/output_js
+    type: Directory
+  output_antismash_knownclusterblast:
+    outputSource: antismash/output_knownclusterblast
+    type: Directory
+  output_antismash_svg:
+    outputSource: antismash/output_svg
+    type: Directory
+  output_antismash_separate_files:
+    outputSource: antismash/output_files
+    type:
+      type: array
+      items: File
 steps:
   antismash:
     in:
       input_fasta: input_fasta_file
-    out: [folders]
-
-    run:
-      class: ExpressionTool
-      id: 'organise'
-      arguments:
-        - valueFrom: ..$(inputs.input_fasta.path)
-          position: 1
-        - valueFrom: prodigal
-          prefix: --genefinding-tool
-          separate: true
-          position: 3
-        - valueFrom: --cb-knownclusters
-          position: 4
-        - valueFrom: $(runtime.outdir)/output
-          prefix: --output-dir
-          position: 5
-      inputs:
-        input_fasta: File
-      outputs:
-        folders: Directory
-      expression: |
-        ${
-          return {'antismash':
-          {
-          'class': 'Directory',
-          'basename': 'output',
-          'listing':[
-
-          ]
-          }}
-
-        }
-
-
-
-
-    ../Tools/antismash/antismash.cwl
+    out:
+      - output_css
+      - output_images
+      - output_js
+      - output_knownclusterblast
+      - output_svg
+      - output_files
+    run: ../Tools/antismash/antismash.cwl

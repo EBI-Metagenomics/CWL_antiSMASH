@@ -1,0 +1,195 @@
+# cwltest --basedir cwl_test_dir --test ../Tools/antismash/antismash.cwl --tool cwltool
+
+- job: /Users/kates/Desktop/antismash/CWL_antiSMASH/Tools/antismash/antismash.yml
+  tool: /Users/kates/Desktop/antismash/CWL_antiSMASH/Tools/antismash/antismash.cwl
+  output:
+    output_css:
+      basename: css
+      class: Directory
+      listing:
+        - basename: bacteria.css
+          class: File
+          size: 35729
+    stderr:
+      basename: stderr.txt
+      class: File
+      size: 0
+    stdout:
+      basename: stdout.txt
+      class: File
+      size: 0
+    output_images:
+      basename: images
+      class: Directory
+      listing:
+        - basename: contact.svg
+          class: File
+          size: 678
+        - basename: bacteria_antismash_logo.svg
+          class: File
+          size: 8433
+        - basename: plant_antismash_icon_white.svg
+          class: File
+          size: 22913
+        - basename: nostructure_icon.png
+          class: File
+          size: 4131
+        - basename: bacteria_help.png
+          class: File
+          size: 1951
+        - basename: mail.png
+          class: File
+          size: 1459
+        - basename: bacteria_logo.png
+          class: File
+          size: 3831
+        - basename: question-circle-solid.svg
+          class: File
+          size: 854
+        - basename: fungi_antismash_logo.svg
+          class: File
+          size: 8401
+        - basename: expand-arrows-alt-solid.svg
+          class: File
+          size: 715
+        - basename: bacteria_antismash_white.svg
+          class: File
+          size: 40766
+        - basename: download.svg
+          class: File
+          size: 656
+        - basename: fungi_logo.png
+          class: File
+          size: 3572
+        - basename: fungi_help.png
+          class: File
+          size: 1863
+        - basename: fungi_about.png
+          class: File
+          size: 1595
+        - basename: bacteria_antismash_icon.svg
+          class: File
+          size: 37742
+        - basename: search-solid.svg
+          class: File
+          size: 559
+        - basename: bacteria_download.png
+          class: File
+          size: 1670
+        - basename: about.svg
+          class: File
+          size: 513
+        - basename: fungi_home.png
+          class: File
+          size: 1392
+        - basename: external-link-alt-solid.svg
+          class: File
+          size: 778
+        - basename: plus-circle.svg
+          class: File
+          size: 491
+        - basename: fungi_antismash_icon.svg
+          class: File
+          size: 3331
+        - basename: fungi_antismash_icon_white.svg
+          class: File
+          size: 3335
+        - basename: bacteria_home.png
+          class: File
+          size: 1414
+        - basename: bacteria_about.png
+          class: File
+          size: 1607
+        - basename: minus-circle.svg
+          class: File
+          size: 389
+        - basename: help.svg
+          class: File
+          size: 794
+        - basename: plant_antismash_icon.svg
+          class: File
+          size: 22909
+        - basename: fungi_download.png
+          class: File
+          size: 1679
+    output_js:
+      basename: js
+      class: Directory
+      listing:
+        - basename: jquery.tablesorter.min.js
+          size: 16521
+          class: File
+        - basename: antismash.js
+          size: 200546
+          class: File
+        - basename: jquery.js
+          size: 92629
+          class: File
+
+    output_knownclusterblast:
+      basename: knownclusterblast
+      class: Directory
+      listing:
+        - basename: .11861_6_58.2_c1.txt
+          class: File
+          size: 1111
+        - basename: region1
+          class: Directory
+          listing:
+            - basename: ctg2_171_mibig_hits.html
+              class: File
+              size: 1755
+            - basename: ctg2_160_mibig_hits.html
+              class: File
+              size: 4727
+            - basename: ctg2_144_mibig_hits.html
+              class: File
+              size: 2098
+            - basename: ctg2_170_mibig_hits.html
+              class: File
+              size: 1768
+            - basename: ctg2_147_mibig_hits.html
+              class: File
+              size: 9110
+            - basename: ctg2_163_mibig_hits.html
+              class: File
+              size: 2137
+            - basename: ctg2_164_mibig_hits.html
+              class: File
+              size: 2118
+            - basename: ctg2_140_mibig_hits.html
+              class: File
+              size: 1736
+            - basename: ctg2_157_mibig_hits.html
+              class: File
+              size: 66040
+            - basename: ctg2_162_mibig_hits.html
+              class: File
+              size: 3914
+    output_svg:
+      basename: svg
+      class: Directory
+      listing:
+        - basename: knownclusterblast_r2c1_all.svg
+          class: File
+          size: 10865
+
+    output_files:
+      - basename: example.gbk
+        class: File
+        size: 1795321
+      - basename: example.json
+        class: File
+      - basename: example.zip
+        class: File
+      - basename: index.html
+        class: File
+        size: 16792
+      - basename: knownclusterblastoutput.txt
+        class: File
+        size: 38431
+      - basename: regions.js
+        class: File
+        size: 229247
+
+
