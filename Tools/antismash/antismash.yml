@@ -1,4 +1,5 @@
 input_fasta:
   class: File
-  path: ../../Files/11861_6_58.fa
-output_dir: /Users/kates/Desktop/antismash/out/
+  path: ../../Files/input/example.fa
+  #../../Files/input/11861_6_58.fa #
+#output_dir: /Users/kates/Desktop/antismash/out/

@@ -36,8 +36,37 @@ outputs:
   stdout: stdout
   stderr: stderr
 
-  css_folder:
+  output_css:
     type: Directory
     outputBinding:
-      glob: 'output/css'  #$(runtime.outdir)  #'/output'
+      glob: 'output/css'
 
+  output_images:
+    type: Directory
+    outputBinding:
+      glob: 'output/images'
+
+  output_js:
+    type: Directory
+    outputBinding:
+      glob: 'output/js'
+
+  output_knownclusterblast:
+    type: Directory
+    outputBinding:
+      glob: 'output/knownclusterblast'
+
+  output_svg:
+    type: Directory
+    outputBinding:
+      glob: 'output/svg'
+
+  output_files:
+    type:
+      type: array
+      items: File
+    outputBinding:
+      glob: output/*.*
+
+      #glob: 'output' - for full folder
+      #$(runtime.outdir)
