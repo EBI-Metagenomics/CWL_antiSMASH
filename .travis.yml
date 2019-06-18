@@ -1,0 +1,27 @@
+os: linux
+
+services:
+  - docker
+
+language: python
+python: 3.6
+
+install:
+  - pip install -q cwl-runner cwltest cwltool
+  - docker pull antismash/standalone:5.0.0
+
+script:
+  - echo -e '#!/bin/bash\ncwltool --parallel "$@"' > pcwltool
+  - chmod a+x pcwltool
+  - |
+    while sleep 9m; do
+      echo "====[ $SECONDS seconds still running ]===="
+    done &
+  - export PATH=$PATH:$PWD && cwltool $TRAVIS_BUILD_DIR/Tools/antismash/antismash.cwl $TRAVIS_BUILD_DIR/Tools/antismash/antismash.yml
+  #cwltest --test $TRAVIS_BUILD_DIR/CWL/Tests/pipeline_test.yml --timeout 7200 --tool cwltool
+
+# deploy:
+#  provider: script
+#  script: bash $TRAVIS_BUILD_DIR/docker_push.sh
+#  on:
+#    branch: master
