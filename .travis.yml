@@ -17,8 +17,7 @@ script:
     while sleep 9m; do
       echo "====[ $SECONDS seconds still running ]===="
     done &
-  - export PATH=$PATH:$PWD && cwltool $TRAVIS_BUILD_DIR/Tools/antismash/antismash.cwl $TRAVIS_BUILD_DIR/Tools/antismash/antismash.yml
-  #cwltest --test $TRAVIS_BUILD_DIR/CWL/Tests/pipeline_test.yml --timeout 7200 --tool cwltool
+  - export PATH=$PATH:$PWD && cwltest --test $TRAVIS_BUILD_DIR/CWL/Tests/test_antismash_example.yml --timeout 7200 --tool cwltool
 
 # deploy:
 #  provider: script
